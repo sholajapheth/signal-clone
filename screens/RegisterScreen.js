@@ -4,6 +4,7 @@ import { Button, Input, Text } from "@rneui/base";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { auth } from "../firebase";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState("");

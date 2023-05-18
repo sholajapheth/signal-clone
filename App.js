@@ -1,6 +1,5 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import LoginScreen from "./screens/LoginScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -21,7 +20,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        // initialRouteName="Home"
         screenOptions={globalScreenOptions}
       >
         <Stack.Screen name="Login" component={LoginScreen} />
